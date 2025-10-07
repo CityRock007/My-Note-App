@@ -1,0 +1,45 @@
+name: note
+description: "A beautiful, offline-first note-taking app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/note.png
+
+# Configuration for App Icon
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/note.png"
+
+# Configuration for Splash Screen
+flutter_native_splash:
+  color: "#1A1A2E" 
+  image: assets/note.png
+  android: true
+  ios: true
